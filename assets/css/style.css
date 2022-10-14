@@ -1,110 +1,123 @@
 
 
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
 
-        :root {
-            --appbar-height: 80px;
-            --bg-color: #0078aa;
-        }
+:root {
+    --appbar-height: 80px;
+    --bg-color: #0078aa;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Roboto', sans-serif;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
 
-        /* [ defaults ]
-        ============================ */
-        p {    
-            margin-block-start: 1em;
-            margin-block-end: 1em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-        }
+/* [ defaults ]
+============================ */
+p {    
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
+/* [ body ]
+============================ */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fefefe;
+}
 
-        appbar {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            height: var(--appbar-height);
-            margin: 0 auto;
-            padding: 0 16px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9;
-            background: var(--bg-color);
-            color: #fff;
-        }
+/* [ appbar ]
+============================ */
+appbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--appbar-height);
+    margin: 0 auto;
+    padding: 0 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background: var(--bg-color);
+    color: #fff;
+}
 
-        logo {
-            display: flex;
-            font-weight: bold;
-        }
+logo {
+    display: flex;
+    font-weight: bold;
+}
 
-        #appbar-menu {
-            display: block;
-        }
+#appbar-menu {
+    display: block;
+}
 
-        appbar ul {
-            display: none;
-        }
+appbar ul {
+    display: none;
+}
+appbar ul li {
+    cursor: pointer;
+}
 
-        home {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: clamp( 100px, 90%, 900px );
-            margin-top: var(--appbar-height);
-            padding-top: 24px;
-            text-align: justify;
-        }
+/* [ home ]
+============================ */
+home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: clamp( 100px, 90%, 900px );
+    margin-top: var(--appbar-height);
+    padding-top: 24px;
+    text-align: justify;
+}
 
-        home-title {
-            font-weight: bold;
-        } 
+home-title {
+    font-weight: bold;
+} 
 
-        #img-town {
-            width: clamp( 50px, 90%, 510px );
-            border-radius: 8px;
-            margin: 16px;
-        }
+#img-town {
+    width: clamp( 50px, 90%, 510px );
+    border-radius: 8px;
+    margin: 16px;
+}
 
-        footer {
-            width: 100%;
-            height: 110px;
-            background: var(--bg-color);
-            display: grid;
-            place-items: center;
-            font-weight: bold;
-        }
+/* [ footer ]
+============================ */
+footer {
+    width: 100%;
+    height: 110px;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
 
-        /* [ medias ] */
-        @media ( min-width: 550px ) {
-            appbar{
-                justify-content: start;
-                gap: 1rem;
-                padding: 0 5rem;
-            }
+/* [ medias ]
+============================ */
+@media ( min-width: 550px ) {
+    appbar{
+        justify-content: start;
+        gap: 1rem;
+        padding: 0 5rem;
+    }
 
-            #appbar-menu {
-                display: none;
-            }
+    #appbar-menu {
+        display: none;
+    }
 
-            appbar ul {
-                display: flex;
-                align-items: center;
-                justify-content: space-around;
-                gap: 2rem;
-                list-style: none;
-            }
-        }
+    appbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        list-style: none;
+    }
+}
